@@ -1,0 +1,293 @@
+/* FONTS */
+@font-face {
+    font-family: "Apercu";
+    src: url('../fonts/apercu/apercu_regular_pro.otf');
+}
+
+/* BODY */
+body {
+    margin: 0 auto;
+}
+
+main {
+    width: 90vw;
+    height: auto;
+    margin: 5px auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-family: "Lato";
+    border: 5px solid #002B54;
+}
+
+
+/* TABLE */
+table {
+    position: relative;
+    display: block;
+}
+
+caption {
+    font-size: 1.55em;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+th {
+    border-top: 3px solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td {
+    margin: 20px;
+}
+
+tbody .lastrow {
+    border-bottom: 3px solid;
+    border-collapse: separate;
+    padding: 30px;
+    text-align: center;
+}
+
+.lastrow a {
+    text-decoration: none;
+    border: 2px solid #003049;
+    border-radius: 3px;
+    padding: 7px 12px !important;
+    transition: all .3s;
+    color: #003049;
+}
+
+.lastrow a:hover {
+    color: #fff;
+}
+
+.prices {
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    box-shadow: 10px 10px 10px;
+}
+
+
+.bg1, .color1 a:hover {
+    background-color: #003049;
+}
+.bg2, .color2 a:hover {
+    background-color: #D62828;
+}
+.bg3, .color3 a:hover {
+    background-color: #F77F00;
+}
+.bg4, .color4 a:hover {
+    background-color: #FCBF49;
+}
+.bg5, .color5 a:hover {
+    background-color: #D5CEA7;
+}
+
+.color1, .color1 a {
+    color: #003049;
+    border-color: #003049;
+    padding: 15px;
+}
+
+.color2, .color2 a {
+    color: #D62828;
+    border-color: #D62828;
+    padding: 15px;
+}
+
+.color3, .color3 a {
+    color: #F77F00;
+    border-color: #F77F00;
+    padding: 15px;
+}
+
+.color4, .color4 a {
+    color: #FCBF49;
+    border-color: #FCBF49;
+    padding: 15px;
+}
+
+.color5, .color5 a {
+    color: #D5CEA7;
+    border-color: #D5CEA7;
+    padding: 15px;
+}
+
+table, th, td {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    padding: 10px;
+    line-height: 120%;
+}
+
+thead th {
+    min-width: 100%;
+    font-size: 1.2em;
+}
+
+thead th {
+    padding: 5px;
+}
+
+tr:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+
+/* PURCHASE FORM */
+#modal_wrapper.overlay::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  color: #fff;
+}
+
+#modal_window {
+  display: none;
+  z-index: 200;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 550px;
+  height: 600px;
+  overflow: scroll;
+  padding: 0px 20px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+  padding-top: 0px;
+}
+
+#modal_wrapper.overlay #modal_window {
+  display: block;
+}
+
+.btnClose {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6em;
+}
+
+#rightAlign {
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#selected {
+    margin-bottom: 0;
+    font-size: 2em;
+    margin-left: 0;
+}
+
+input, select {
+    height: 25px;
+    font-size: 0.9em;
+    border: none;
+    padding-bottom: 0px;
+    border-bottom: solid 1px #003049;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #003049 4%);
+    background-position: -310px 0;
+    background-size: 310px 100%;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+input:focus, input:valid, select:focus, select:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+
+input[name="firstName"], input[name="lastName"], input[name="email"] {
+    width: 300px;
+}
+
+input[name="purchaseForm"] {
+    background-color: #003049;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+input[name="purchaseForm"]:hover {
+    opacity: 0.8;
+}
+
+#centerAlign {
+    text-align: center;
+}
+
+input:-webkit-autofill {
+    animation-name: autofill;
+    animation-fill-mode: both;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    width: 120px;
+    margin-left: 0.3em;
+}
+
+fieldset {
+    margin: 10px;
+    border-radius: 3px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+#totalPriceBefore, #totalPriceAfter {
+    margin-left: 0.3em;
+    color: #5252a4;
+    margin: 0;
+    text-align: center;
+    background-color: #f3f3ff;
+    padding: 10px;
+}
+
+#totalPriceBefore {
+    margin-top: 20px;
+}
+
+#selected, #note, #price {
+    margin-left: 10px;
+}
+
+
+/* NAVIGATION COLOR */
+nav {
+    background: #222;
+}
+
+
+/* KEYFRAMES */
+@keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
