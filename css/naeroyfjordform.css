@@ -1,7 +1,7 @@
-/* FONTS */
+/* assets/fonts */
 @font-face {
     font-family: "Apercu";
-    src: url('../fonts/apercu/apercu_regular_pro.otf');
+    src: url('../assets/fonts/apercu/apercu_regular_pro.otf');
 }
 
 /* BODY */

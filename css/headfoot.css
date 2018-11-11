@@ -1,73 +1,79 @@
 @font-face {
-    font-family: "Apercu";
-    src: url('../fonts/apercu/apercu_regular_pro.otf');
+  font-family: "Apercu";
+  src: url('../assets/fonts/apercu/apercu_regular_pro.otf');
 }
 
 * {
-    font-family: "Apercu";
+  font-family: "Apercu";
 }
 
 /* NAVIGATION */
 nav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    font-size: 13px;
-    width: 100%;
-    transition: all 0.6s ease-out;
-    z-index: 99;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  font-size: 13px;
+  width: 100%;
+  transition: all 0.6s ease-out;
+  z-index: 99;
 }
 
 nav a {
-    display: inline-block;
-    margin-left: 25px;
-    margin-right:25px;
-    padding: 20px 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right:25px;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 nav a:hover {
-    color: #DDD;
+  color: #DDD;
 }
 
 nav.change {
-    background: #222;
-    transition: all ease .5s;
+  background: #222;
+  transition: all ease .5s;
 }
 
 
 /* FOOTER */
 footer {
-    text-align: center;
-    color: white;
-    padding: 60px;
-    font-size: 13px;
-    background-image: linear-gradient(to top, rgba(0,0,0, 0) 10%, rgba(0,0,0, 0.95) 100%), url("../media/footer.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    clear: both;
-    bottom: 0;
+  text-align: center;
+  color: white;
+  padding: 60px;
+  font-size: 13px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clear: both;
+  bottom: 0;
+}
+
+.webp footer {
+  background-image: linear-gradient(to top, rgba(0,0,0, 0) 10%, rgba(0,0,0, 0.95) 100%), url("../assets/images/footer.webp");
+}
+.no-webp footer {
+  background-image: linear-gradient(to top, rgba(0,0,0, 0) 10%, rgba(0,0,0, 0.95) 100%), url("../assets/images/footer.jpg");
 }
 
 footer p {
-    display: inline-block;
+  display: inline-block;
 }
 
 footer a {
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .divider {
-    margin-left: 15px;
-    margin-right: 5px;
+  margin-left: 15px;
+  margin-right: 5px;
 }
 
 footer a:hover {
-    color: #DDD;
+  color: #DDD;
 }

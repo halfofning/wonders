@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/naeroyfjord.css"/>
     <link rel="stylesheet" href="css/headfoot.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Vollkorn" rel="stylesheet">
-    <link rel="icon" href="media/rainbow.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/images/rainbow.png" type="image/png" sizes="16x16">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/navScroll.js"></script>
     <script src="js/scrolling.js"></script>
+    <script src="js/modernizr-custom.js"></script>
 </head>
 <body>
-    <!-- <header w3-include-html="header.html"></header> -->
     <nav>
         <a href="index.html" class="active">Home</a>
         <a href="niagara.html">Niagara Falls</a>
@@ -63,11 +63,42 @@
             <section id="second">
                 <hr><br>
                 <h2>You can experience the Nærøyfjord on most of these tours - here's a selection</h2>
-                <a href="#third"><img class="largeimg" src="media/norway1.jpg" alt="Norway in a nutshell®"></a>
-                <a href="#third"><img class="largeimg" src="media/norway2.jpg" alt="Sognefjord & Nærøyfjord in a nutshell®"></a>
-                <a href="#third"><img src="media/norway3.jpg" alt="Hurtigruten & Norway in a nutshell®"></a>
-                <a href="#third"><img src="media/norway4.jpg" alt="Pulpit Rock & Norway in a nutshell®"></a>
-                <a href="#third"><img src="media/norway5.jpg" alt="Northern Lights & Norway in a nutshell®"></a>
+
+                <a href="#third">
+                  <picture>
+                    <source srcset="assets/images/norway1.webp" type="image/webp">
+                    <source srcset="assets/images/norway1.jpg" type="image/jpeg">
+                    <img class="largeimg" src="assets/images/norway1.jpg" alt="Norway in a nutshell®">
+                  </picture>
+                </a>
+                <a href="#third">
+                  <picture>
+                    <source srcset="assets/images/norway2.webp" type="image/webp">
+                    <source srcset="assets/images/norway2.jpg" type="image/jpeg">
+                    <img class="largeimg" src="assets/images/norway2.jpg" alt="Sognefjord & Nærøyfjord in a nutshell®">
+                  </picture>
+                </a>
+                <a href="#third">
+                  <picture>
+                    <source srcset="assets/images/norway3.webp" type="image/webp">
+                    <source srcset="assets/images/norway3.jpg" type="image/jpeg">
+                    <img src="assets/images/norway3.jpg" alt="Hurtigruten & Norway in a nutshell®">
+                  </picture>
+                </a>
+                <a href="#third">
+                  <picture>
+                    <source srcset="assets/images/norway4.webp" type="image/webp">
+                    <source srcset="assets/images/norwa4.jpg" type="image/jpeg">
+                    <img src="assets/images/norway4.jpg" alt="Pulpit Rock & Norway in a nutshell®">
+                  </picture>
+                </a>
+                <a href="#third">
+                  <picture>
+                    <source srcset="assets/images/norway5.webp" type="image/webp">
+                    <source srcset="assets/images/norway5.jpg" type="image/jpeg">
+                    <img src="assets/images/norway5.jpg" alt="Northern Lights & Norway in a nutshell®">
+                  </picture>
+                </a>
             </section>
         </div>
         <div class="middle">
@@ -180,11 +211,7 @@
       <a href="eiffel.html">Eiffel Tower</a>
       <a href="naeroyfjord.html">Nærøyfjord</a>
     </footer>
-
-    <!-- <footer w3-include-html="footer.html"></footer> -->
-    <!-- <script>
-        w3.includeHTML();
-    </script> -->
+    
     </div>
     <script src="js/popup.js"></script>
 </body>
