@@ -12,9 +12,9 @@
 
 /* BODY */
 body {
-font-family: "Apercu";
-margin: 0 auto;
-min-height: 100%;
+  font-family: "Apercu";
+  margin: 0 auto;
+  min-height: 100%;
 }
 
 
@@ -26,7 +26,7 @@ min-height: 100%;
 }
 
 .webp #top {
-background-image: url("../assets/images/naeroyfjordbg.webp");
+  background-image: url("../assets/images/naeroyfjordbg.webp");
 }
 .no-webp #top {
   background-image: url("../assets/images/naeroyfjordbg.jpg");
@@ -345,19 +345,19 @@ input:-webkit-autofill {
 
 @keyframes autofill {
   to {
-      background: transparent;
+    background: transparent;
   }
 }
 
 
 @media assets/images only screen and (max-width: 600px){
   img {
-      height: auto;
-      max-width: 230px;
-      width: 100%;
+    height: auto;
+    max-width: 230px;
+    width: 100%;
   }
   table {
-      max-width: 100%;
-      float: left;
+    max-width: 100%;
+    float: left;
   }
 }
